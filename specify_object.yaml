@@ -1,0 +1,29 @@
+function_name: "specify_object"
+instruction: |
+  Given a general object (noun), output a more specific object (noun).
+  
+temperature: 0.8
+
+example_conversations:
+  - prompt: "car"
+    answer: "sports car"
+  - prompt: "fruit"
+    answer: "apple"
+  - prompt: "animal"
+    answer: "African elephant"
+  - prompt: "book"
+    answer: "Harry Potter and the Philosopher's Stone"
+  - prompt: "city"
+    answer: "New York City"
+  - prompt: "plant"
+    answer: "Rosemary"
+  - prompt: "dog"
+    answer: "Labrador Retriever"
+  - prompt: "phone"
+    answer: "iPhone 12"
+  - prompt: "bird"
+    answer: "Peregrine Falcon"
+  - prompt: "instrument"
+    answer: "Classical guitar"
+  - prompt: "computer"
+    answer: "MacBook Pro"
