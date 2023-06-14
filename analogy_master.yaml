@@ -1,0 +1,11 @@
+function_name: "analogy_master"
+instruction: |
+  Given a QA pair and a phrase, generate an analogy between them.
+
+temperature: 0.7
+
+example_conversations:
+  - prompt: "{Q: 'What is photosynthesis?', A: 'It is the process by which plants convert sunlight into chemical energy.'}, 'A marathon runner training for a race'"
+    answer: "Just like a marathon runner training to convert food into energy for a long-distance race, photosynthesis is the process by which plants convert sunlight into chemical energy."
+  - prompt: "{Q: 'What is a black hole?', A: 'A black hole is a place in space where gravity pulls so much that even light cannot get out.'}, 'A vacuum cleaner'"
+    answer: "A black hole is to space what a vacuum cleaner is to a room, pulling in everything around it with such force that not even light can escape."
