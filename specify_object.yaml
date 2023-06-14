@@ -1,6 +1,6 @@
 function_name: "specify_object"
 instruction: |
-  Given a chain of objects (nouns) where each subsequent object is more specific than the previous, output an even more specific object (noun) to continue the chain.
+  Given a chain of objects (nouns) where each subsequent object is more specific than the previous, output an even more specific object (noun) to continue the chain. If you cannot further specify thing, output "None".
   
 temperature: 0.5
 
@@ -43,3 +43,5 @@ example_conversations:
     answer: "Classical guitar"
   - prompt: "electronic device, computer"
     answer: "MacBook Pro"
+  - prompt: "Tower,Eiffel Tower"
+    answer: "None"
