@@ -1,6 +1,6 @@
 function_name: "specify_object"
 instruction: |
-  Given a general object (noun), output a more specific object (noun).
+  Given a general object (noun), output a more specific object (noun). If you cannot output more specifc one, please output None.
   
 temperature: 0.7
 
@@ -27,3 +27,5 @@ example_conversations:
     answer: "Classical guitar"
   - prompt: "computer"
     answer: "MacBook Pro"
+  - prompt: "Grand Central Terminal"
+    answer: "None"
