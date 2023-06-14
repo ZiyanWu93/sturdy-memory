@@ -1,6 +1,6 @@
 function_name: "specify_object"
 instruction: |
-  Given a chain of objects (nouns) where each subsequent object is more specific than the previous, output an even more specific object (noun) to continue the chain. If no more specific object can be generated, output 'None'.
+  Given a chain of objects (nouns) where each subsequent object is more specific than the previous, output an even more specific object (noun) to continue the chain. Any thing at the end of chain is a kind of previous thing. If no more specific object can be generated, output 'None'.
   
 temperature: 0.5
 
