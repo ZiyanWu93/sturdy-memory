@@ -6,7 +6,7 @@ instruction: |
 
 example_conversations: 
   - prompt: |
-     How can SmartNIC access disk efficienty
+     How can SmartNIC access disk efficienty?
      A SmartNIC (Smart Network Interface Card) is a network interface card that has additional processing power and capabilities beyond a traditional NIC. One of the capabilities of a SmartNIC is the ability to access disks via P2PDMA (Peer-to-Peer Direct Memory Access). P2PDMA is a technology that allows two devices to directly access each other's memory without involving the CPU. This can improve performance and reduce latency in data transfer between the SmartNIC and the disk. Overall, the use of a SmartNIC with P2PDMA can improve the efficiency and speed of data transfer in a networked environment.  
 
     answer: |
