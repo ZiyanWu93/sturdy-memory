@@ -1,12 +1,12 @@
-instruction: "Given QA, generate a follow-up question and answer. methodology options: clarification, expand, compare, implications, alternative perspectives, and contextualization."
+instruction: "Given a question and answer, generate a follow-up question and answer. methodology options: clarification, expand, compare, implications, alternative perspectives, and contextualization."
 
 properties:
   follow_up_question:
     type: string
-    description: "A follow-up question of Q."
+    description: "A follow-up question of the question the user just gives."
   follow_up_answer:
     type: string
-    description: "Answer to the follow-up question."
+    description: "Answer of the follow-up question."
   methodology:
     type: string
     description: "Methodology used to generate the follow-up question and answer."
