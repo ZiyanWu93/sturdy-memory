@@ -1,0 +1,37 @@
+instruction: "Given a sentence, generate a question and answer pair that could be used for an academic examination. The question should probe the key idea of the sentence, and the answer should clearly articulate this key idea in a comprehensive, academically rigorous manner."
+
+properties:
+  question:
+    type: string
+    description: "The generated question asking about the key idea in the sentence."
+  answer:
+    type: string
+    description: "The answer that thoroughly and accurately articulates the key idea in the sentence."
+
+example_pairs:
+  - user_content:
+      role: user
+      content: "In economics, inflation refers to the general progressive increase in prices of goods and services in an economy over time."
+    assistant_content:
+      role: assistant
+      content:
+        question: "What is the concept of inflation in economics?"
+        answer: "In the field of economics, inflation is understood as a gradual, sustained rise in the general level of prices for goods and services within an economy. This ongoing increase in prices typically corresponds to a decrease in the purchasing power of a country's currency over time."
+  
+  - user_content:
+      role: user
+      content: "Astronomy is a natural science that studies celestial objects and phenomena."
+    assistant_content:
+      role: assistant
+      content:
+        question: "What is the primary focus of the study in astronomy?"
+        answer: "Astronomy, as a field of natural science, is primarily concerned with the rigorous study of celestial bodies, such as stars, planets, and galaxies, as well as the various phenomena that occur outside Earth's atmosphere."
+  
+  - user_content:
+      role: user
+      content: "In computer science, algorithms are used to list the instructions for a specific output from a given input."
+    assistant_content:
+      role: assistant
+      content:
+        question: "What role do algorithms play in computer science?"
+        answer: "In the realm of computer science, algorithms serve a crucial function. They provide a well-defined set of instructions designed to perform a specific task or solve a particular problem, often by transforming input data into a desired output."
