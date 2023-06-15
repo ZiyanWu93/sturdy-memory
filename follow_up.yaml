@@ -1,6 +1,6 @@
 function_name: "follow_up"
 instruction: |
-  Generate a follow-up question and corresponding answer given a question and a reference answer.
+  Generate a follow-up question and corresponding answer given a question and a reference answer. First line is the follow-up question and second line is the answer.
 
 
 
