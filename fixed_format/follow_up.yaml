@@ -1,0 +1,47 @@
+instruction: "Given QA, generate a follow-up question and answer. methodology options: clarification, expand, compare, implications, alternative perspectives, and contextualization."
+
+properties:
+  follow_up_question:
+    type: string
+    description: "A follow-up question of Q."
+  follow_up_answer:
+    type: string
+    description: "Answer to the follow-up question."
+  methodology:
+    type: string
+    description: "Methodology used to generate the follow-up question and answer."
+
+example_pairs:
+  - user_content:
+      role: user
+      content:
+        Q: "What is the role of memory in computer systems?"
+        A: "Memory plays a crucial role in computer systems. It is used to store data and instructions that the CPU needs to access during program execution. There are different types of memory in a computer, including RAM (Random Access Memory), cache memory, and secondary storage devices like hard drives. Efficient memory management is essential for optimizing performance and ensuring smooth operation of computer systems."
+    assistant_content:
+      role: assistant
+      content:
+        follow_up_question: "Can you provide more information about the different types of RAM?"
+        follow_up_answer: "Certainly! There are several types of RAM, including DRAM (Dynamic Random Access Memory), SRAM (Static Random Access Memory), and SDRAM (Synchronous Dynamic Random Access Memory). Each type has its own characteristics and use cases."
+        methodology: "expand"
+  - user_content:
+      role: user
+      content:
+        Q: "Can you explain the concept of network functions?"
+        A: "Network functions refer to the various tasks and operations performed by devices and software in a computer network. These functions include routing, switching, firewalling, load balancing, and more. Network functions are responsible for directing and managing the flow of data across a network, ensuring reliable and secure communication between devices. They play a vital role in the functioning of modern computer networks."
+    assistant_content:
+      role: assistant
+      content:
+        follow_up_question: "How do network functions contribute to network security?"
+        follow_up_answer: "Network functions contribute to network security by enabling features like firewalls, intrusion detection and prevention systems, and VPN (Virtual Private Network) gateways. These functions help protect networks from unauthorized access, malicious attacks, and ensure the confidentiality, integrity, and availability of data."
+        methodology: "implications"
+  - user_content:
+      role: user
+      content:
+        Q: "What is the significance of 5G technology?"
+        A: "5G technology is a next-generation cellular network technology that offers significant advancements compared to previous generations. It provides faster data transfer speeds, lower latency, and higher capacity, enabling new applications and use cases such as autonomous vehicles, remote surgery, and massive IoT (Internet of Things) deployments. 5G technology has the potential to revolutionize various industries and improve connectivity for individuals and businesses."
+    assistant_content:
+      role: assistant
+      content:
+        follow_up_question: "How does 5G technology achieve faster data transfer speeds?"
+        follow_up_answer: "5G technology achieves faster data transfer speeds through the use of higher frequency bands, advanced modulation techniques, and advanced antenna technologies like MIMO (Multiple-Input Multiple-Output). These advancements allow for increased data capacity and more efficient use of the available spectrum."
+        methodology: "compare"
