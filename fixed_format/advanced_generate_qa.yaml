@@ -1,0 +1,32 @@
+instruction: "Given a sentence and its surrounding context, generate a question and answer pair. The question should incorporate some information from the context to make it self-contained and it should ask about the key idea of the sentence. The answer should clearly articulate this key idea."
+
+properties:
+  question:
+    type: string
+    description: "The generated question incorporating context information and asking about the key idea in the sentence."
+  answer:
+    type: string
+    description: "The answer that clearly articulates the key idea in the sentence."
+
+example_pairs:
+  - user_content:
+      role: user
+      content: 
+        sentence: "The Kyoto Protocol is an international treaty which extends the 1992 United Nations Framework Convention on Climate Change (UNFCCC) that commits state parties to reduce greenhouse gas emissions."
+        context: "Climate change has become a major concern for the international community. As a response, the Kyoto Protocol was introduced as an international treaty which extends the 1992 United Nations Framework Convention on Climate Change (UNFCCC). The main objective of this treaty is to commit the state parties to reduce the emissions of greenhouse gases that are recognized as responsible for climate change."
+    assistant_content:
+      role: assistant
+      content:
+        question: "In the context of international efforts to address climate change, what is the main objective of the Kyoto Protocol?"
+        answer: "The Kyoto Protocol, an extension of the 1992 United Nations Framework Convention on Climate Change, primarily commits the participating countries to reduce their greenhouse gas emissions."
+
+  - user_content:
+      role: user
+      content: 
+        sentence: "Photosynthesis is the process used by plants, algae and certain bacteria to harness energy from sunlight into chemical energy."
+        context: "Energy is essential for all living organisms to perform their daily activities. The majority of life on Earth, including plants, algae and some bacteria, harness energy from the Sun through a process known as photosynthesis. Through photosynthesis, these organisms transform sunlight into chemical energy which is then used to fuel their activities."
+    assistant_content:
+      role: assistant
+      content:
+        question: "Considering the necessity of energy for all living organisms, how do plants, algae, and some bacteria obtain their energy?"
+        answer: "Plants, algae, and certain bacteria harness energy from sunlight through a process known as photosynthesis, converting it into chemical energy to fuel their activities."
