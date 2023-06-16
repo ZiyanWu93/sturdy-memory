@@ -21,4 +21,33 @@ properties:
     description: "The suggested answer combining the reference answer and user's answer if the latter provides additional value."
 
 example_pairs:
-
+  - user_content:
+      role: user
+      content:
+        Q: "What is a performance contract?"
+        User_Answer: "Performance contract characterizes the NF performance."
+        reference_A: "Performance contracts enable fine-grained prediction and scrutiny of NF."
+    assistant_content:
+      role: assistant
+      content:
+        total_score: 75
+        content_score: 60
+        content_evaluation: "The answer captures some of the reference answer information but not entirely. The reference answer implies that performance contracts allow for detailed prediction and monitoring of NF (Network Functions), while the answer simply states that a performance contract characterizes NF performance. The details about 'fine-grained prediction' and 'scrutiny' aren't present in the answer."
+        presentation_score: 15
+        presentation_evaluation: "The presentation is mostly clear and coherent but could use more sophisticated language. Suggestion for improvement: Try to use more technical vocabulary related to the topic and ensure the sentences flow well with each other for better coherence."
+        suggested_answer: "Performance contracts enable fine-grained prediction and scrutiny of NF."
+  - user_content:
+      role: user
+      content:
+        Q: "Can you explain the Vigor approach and how it verifies that NF code is memory-safe and satisfies semantic properties?"
+        User_Answer: "I do not know."
+        reference_A: "Vigor, which verifies that NF code written in C satisfies semantic properties and is memory-safe by assuming clear separation of NF code into a library of commonly used NF data structures, verified by experts, and stateless NF logic using the verified library and verified automatically using symbolic execution."
+    assistant_content:
+      role: assistant
+      content:
+        total_score: 0
+        content_score: 0
+        content_evaluation: "Not attempted."
+        presentation_score: 0
+        presentation_evaluation: "Not Attempted"
+        suggested_answer: "Vigor, which verifies that NF code written in C satisfies semantic properties and is memory-safe by assuming clear separation of NF code into a library of commonly used NF data structures, verified by experts, and stateless NF logic using the verified library and verified automatically using symbolic execution."
