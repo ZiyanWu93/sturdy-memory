@@ -6,14 +6,16 @@ example_pairs:
       content: "What is the theory of relativity?"
     assistant_content:
       role: assistant
-      content: "The theory of relativity, developed by Albert Einstein, is a fundamental theory in physics which describes that all motion must be defined relative to a frame of reference and that space and time are interwoven into a single continuum known as space-time. It includes two main parts: special relativity and general relativity."
+      content:
+        generated_answer: "The theory of relativity, developed by Albert Einstein, is a fundamental theory in physics which describes that all motion must be defined relative to a frame of reference and that space and time are interwoven into a single continuum known as space-time. It includes two main parts: special relativity and general relativity."
 
   - user_content:
       role: user
       content: "Where is the Eiffel Tower located?"
     assistant_content:
       role: assistant
-      content: "The Eiffel Tower is located in Paris, France."
+      content:
+        generated_answer: "The Eiffel Tower is located in Paris, France."
 
 properties:
   generated_answer:
