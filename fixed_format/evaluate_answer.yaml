@@ -25,7 +25,7 @@ example_pairs:
       role: user
       content:
         Q: "What is a performance contract?"
-        A: "Performance contract characterizes the NF performance."
+        User_Answer: "Performance contract characterizes the NF performance."
         reference_A: "Performance contracts enable fine-grained prediction and scrutiny of NF."
     assistant_content:
       role: assistant
@@ -40,7 +40,7 @@ example_pairs:
       role: user
       content:
         Q: "Can you explain the Vigor approach and how it verifies that NF code is memory-safe and satisfies semantic properties?"
-        A: "I do not know."
+        User_Answer: "I do not know."
         reference_A: "Vigor, which verifies that NF code written in C satisfies semantic properties and is memory-safe by assuming clear separation of NF code into a library of commonly used NF data structures, verified by experts, and stateless NF logic using the verified library and verified automatically using symbolic execution."
     assistant_content:
       role: assistant
