@@ -5,35 +5,7 @@ properties:
     type: string
     description: "The generated object that is a more specific instance of the last object in the chain."
 example_pairs:
-  - user_content:
-      role: user
-      content: 
-        chain: "Animal -> Mammal -> Dog"
-    assistant_content:
-      role: assistant
-      content:
-        object: "Bulldog"
-  - user_content:
-      role: user
-      content: 
-        chain: "Furniture -> Chair -> Rocking chair"
-    assistant_content:
-      role: assistant
-      content:
-        object: "Wooden rocking chair"
-  - user_content:
-      role: user
-      content: 
-        chain: "Plant -> Tree -> Oak"
-    assistant_content:
-      role: assistant
-      content:
-        object: "Red oak"
-  - user_content:
-      role: user
-      content: 
-        chain: "Life"
-    assistant_content:
-      role: assistant
-      content:
-        object: "Animal"
+  - chain: "Animal -> Mammal -> Dog"
+    content: Bulldog
+  - chain: "Animal -> Mammal -> Dog -> None"
+    content: None
