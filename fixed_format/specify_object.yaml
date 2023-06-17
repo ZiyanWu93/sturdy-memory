@@ -7,5 +7,3 @@ properties:
 example_pairs:
   - chain: "Animal -> Mammal -> Dog"
     content: Bulldog
-  - chain: "Animal -> Mammal -> Dog -> None"
-    content: None
