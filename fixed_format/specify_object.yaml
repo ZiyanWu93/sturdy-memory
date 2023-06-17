@@ -1,10 +1,31 @@
 function_name: "specify_object"
 instruction: "Given a chain of objects (nouns) where each subsequent object is a special instance of the previous object, output an even more specific object (noun) to continue the chain. Any thing at the end of chain is a kind of previous thing. If no more specific object can be generated, output 'None'."
-temperature: 0.7
+properties:
+  object:
+    type: string
+    description: "The generated object that is a more specific instance of the last object in the chain."
 example_pairs:
-  - prompt: "Animal -> Mammal -> Dog"
-    answer: "Bulldog"
-  - prompt: "Furniture -> Chair -> Rocking chair"
-    answer: "Wooden rocking chair"
-  - prompt: "Plant -> Tree -> Oak"
-    answer: "Red oak"
+  - user_content:
+      role: user
+      content: 
+        chain: "Animal -> Mammal -> Dog"
+    assistant_content:
+      role: assistant
+      content:
+        object: "Bulldog"
+  - user_content:
+      role: user
+      content: 
+        chain: "Furniture -> Chair -> Rocking chair"
+    assistant_content:
+      role: assistant
+      content:
+        object: "Wooden rocking chair"
+  - user_content:
+      role: user
+      content: 
+        chain: "Plant -> Tree -> Oak"
+    assistant_content:
+      role: assistant
+      content:
+        object: "Red oak"
