@@ -29,3 +29,11 @@ example_pairs:
       role: assistant
       content:
         object: "Red oak"
+  - user_content:
+      role: user
+      content: 
+        chain: "Life"
+    assistant_content:
+      role: assistant
+      content:
+        object: "Animal"
