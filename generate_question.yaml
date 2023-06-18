@@ -1,9 +1,31 @@
-function_name: "generate_question"
-instruction: |
-  Given a sentence, generate one possible questions that can be answered by the sentence.
-  
-temperature: 1
+instruction: "Given a sentence, generate one possible question that can be answered by the sentence. When generating the question, consider methodologies such as: identifying key elements of the sentence, focusing on the who, what, when, where, why, and how aspects, and framing the question in a manner that the sentence can provide a direct answer."
 
-example_conversations:
-  - prompt: "Photosynthesis is the process used by plants, algae and certain bacteria to harness energy from sunlight into chemical energy."
-    answer: "What is the process by which plants harness energy from sunlight?"
+properties:
+  generated_question:
+    type: string
+    description: "A generated question that can be answered by the given sentence."
+
+example_pairs:
+  - user_content:
+      role: user
+      content: "Photosynthesis is the process used by plants, algae and certain bacteria to harness energy from sunlight into chemical energy."
+    assistant_content:
+      role: assistant
+      content:
+        generated_question: "What is the process by which plants, algae and certain bacteria harness energy from sunlight?"
+
+  - user_content:
+      role: user
+      content: "The Eiffel Tower, located in Paris, is one of the most visited monuments in the world."
+    assistant_content:
+      role: assistant
+      content:
+        generated_question: "Which monument located in Paris is one of the most visited in the world?"
+
+  - user_content:
+      role: user
+      content: "Albert Einstein, a theoretical physicist, developed the theory of relativity."
+    assistant_content:
+      role: assistant
+      content:
+        generated_question: "Who developed the theory of relativity?"

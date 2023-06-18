@@ -1,47 +1,9 @@
 function_name: "specify_object"
-instruction: |
-  Given a chain of objects (nouns) where each subsequent object is a special instance of the previous object, output an even more specific object (noun) to continue the chain. Any thing at the end of chain is a kind of previous thing. If no more specific object can be generated, output 'None'.
-  
-temperature: 0.5
-
-example_conversations:
-  - prompt: "vehicle"
-    answer: "car"
-  - prompt: "food"
-    answer: "fruit"
-  - prompt: "living being"
-    answer: "animal"
-  - prompt: "literature"
-    answer: "book"
-  - prompt: "geographical location"
-    answer: "city"
-  - prompt: "living thing"
-    answer: "plant"
-  - prompt: "animal"
-    answer: "dog"
-  - prompt: "electronic device"
-    answer: "phone"
-  - prompt: "vehicle -> car"
-    answer: "sports car"
-  - prompt: "food -> fruit"
-    answer: "apple"
-  - prompt: "living being -> animal"
-    answer: "elephant"
-  - prompt: "literature -> book"
-    answer: "Harry Potter and the Philosopher's Stone"
-  - prompt: "geographical location -> city"
-    answer: "New York City"
-  - prompt: "living thing -> plant"
-    answer: "Rosemary"
-  - prompt: "animal -> dog"
-    answer: "Labrador Retriever"
-  - prompt: "electronic device -> phone"
-    answer: "iPhone 12"
-  - prompt: "animal -> bird"
-    answer: "Peregrine Falcon"
-  - prompt: "musical instrument -> string instrument"
-    answer: "Classical guitar"
-  - prompt: "electronic device -> computer"
-    answer: "MacBook Pro"
-  - prompt: "Harry Potter and the Philosopher's Stone"
-    answer: "None"
+instruction: "Given an object or a chain of objects (nouns) where each subsequent object is a special instance of the previous object, output an even more specific object (noun) to continue the chain. Any thing at the end of chain is a kind of previous thing. If no more specific object can be generated, output 'None'."
+properties:
+  object:
+    type: string
+    description: "The generated object that is a more specific instance of the last object in the chain."
+example_pairs:
+  - chain: "Animal -> Mammal -> Dog"
+    content: Bulldog
