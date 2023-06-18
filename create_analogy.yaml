@@ -1,5 +1,5 @@
 function_name: "create_analogy"
-instruction: "Given a text and an object, try to find analogy between the key idea and the object. Do not be afraid of being creative."
+instruction: "Given a text and an object, try to find an figurative, detailed, vivid analogy between the key idea and the object. Do not be afraid of being creative."
 properties:
   analogy:
     type: string
