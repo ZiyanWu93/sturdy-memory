@@ -3,7 +3,7 @@ instruction: "You are an encyclopedia. Given an object, create a specific instan
 properties:
   object:
     type: string
-    description: "The generated object that is a more specific instance of the last object in the chain."
+    description: "The generated object that is a more specific instance of the last object in the chain. no more than 4 words."
 example_pairs:
   - chain: "Animal -> Mammal -> Dog"
     content: Bulldog
