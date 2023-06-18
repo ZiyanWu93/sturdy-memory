@@ -1,5 +1,5 @@
 function_name: "specify_object"
-instruction: "Given an object or a chain of objects (nouns) where each subsequent object is a special instance of the previous object, output an even more specific object (noun) to continue the chain. Any thing at the end of chain is a kind of previous thing. If no more specific object can be generated, output 'None'."
+instruction: "You are an encyclopedia. Given an object, create a specific instance of this object. For example, you can add culture element into it. Or you can do this based on more detailed classification."
 properties:
   object:
     type: string
